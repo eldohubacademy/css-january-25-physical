@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro to CSS</title>
+    <link rel="stylesheet" href="intro.css" />
   </head>
   <body>
     <h1>CSS - Cascading Style Sheets</h1>
@@ -22,10 +23,21 @@
     </p>
 
     <h2>CSS Syntax(how do we write css)</h2>
-    <p> A selector is used to target an element or a group of elements for styling</p>
-    <p> {} - A declaration block - groups properties and values to be applied on the selector </p>
-    <p>Property - a presentation aspect you'd want to modify e.g. color, width,size, position</p>
-    <p>Value - the final look you are interested in for the page(red, fullpage, 400px ... )</p>
+    <p>
+      A selector is used to target an element or a group of elements for styling
+    </p>
+    <p>
+      {} - A declaration block - groups properties and values to be applied on
+      the selector
+    </p>
+    <p>
+      Property - a presentation aspect you'd want to modify e.g. color,
+      width,size, position
+    </p>
+    <p>
+      Value - the final look you are interested in for the page(red, fullpage,
+      400px ... )
+    </p>
     <pre>
     <code> 
         selector { 
@@ -40,22 +52,46 @@
         } 
     </code>
     </pre>
-    ` `~
 
-        <h2> Where do we put our CSS </h2>
-        <ul>
-            <li>
-                <h3>Inline CSS</h3>
-                <p></p>
-            </li>
-            <li>
-                <h3>Internal CSSS</h3>
-                <p></p>
-            </li>
-            <li>
-                <h3>External CSS (Recomended)</h3>
-                <p></p>
-            </li>
-        </ul>
+    <h2>Where do we put our CSS</h2>
+    <ul>
+      <li>
+        <h3>Inline CSS</h3>
+        <p style="color: red">
+          We use the style attribute on indivual elements.(Code is less reusable
+          and makes maintaining the application difficult)
+        </p>
+      </li>
+      <li>
+        <h3>Internal CSS</h3>
+        <p>
+          Using the style element . (Doing styles within same file as structure
+          is not recomended. Styles also won't be shared to other html pages.)
+        </p>
+      </li>
+      <li>
+        <h3>External CSS (Recomended)</h3>
+        <p>
+          Using a different file( .css ) linked to the html page using the link
+          element usualy placed in the head of a html page.
+        </p>
+      </li>
+    </ul>
+    <style>
+      p {
+        color: green;
+        font-weight: bold;
+      }
+    </style>
+
+    <!--   
+
+Discus these terms in CSS context(use code examples if posible)
+1. Cascading
+2. Inheritance
+3. Specificity
+
+(All these help the browser decide which value to use)
+-->
   </body>
 </html>
