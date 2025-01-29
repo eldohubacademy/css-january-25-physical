@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <p>
+      CSS selectors are patterns used to select and style elements in an HTML
+      document
+    </p>
+    <ul>
+      <li>
+        <h2>Universal selector *</h2>
+        <p class="desc">Selects all elements in the page</p>
+      </li>
+      <li>
+        <h2>Element Selector / Type selector</h2>
+        <p class="desc">
+          Selects all elements of a given type e.g. p, img, h2,...
+        </p>
+      </li>
+      <li id="hght">
+        <h2>Class Selector (.)</h2>
+        <p class="desc">Selects all elements with a specific class</p>
+      </li>
+      <li>
+        <h2>ID Selector (#)</h2>
+        <p>Selects a single element with a specific ID.</p>
+      </li>
+      <li>
+        <h2>Grouping and combining selectors</h2>
+        <ul id="special">
+          <li>
+            <h3>Group Selector (,)</h3>
+            <p>Applies the same styles to multiple selectors</p>
+          </li>
+          <li>
+            <h3>Descendant Selector (space)</h3>
+            <p>Selects elements inside another element.</p>
+          </li>
+          <li>
+            <h3>Child Selector (>)</h3>
+            <p>Selects only direct children of an element.</p>
+          </li>
+          <li>
+            <h3 id="heading">Adjacent Sibling selector (+)</h3>
+            <p>Selects the first adjacent sibling element.</p>
+            <p>heloo world!!!!</p>
+          </li>
+          <li>
+            <h3>General Sibling Selector (~)</h3>
+            <p>Selects all siblings after the specified element.</p>
+          </li>
+        </ul>
+      </li>
+      <li><h2>Attribute Selectors</h2></li>
+      <li><h2>Pseudo-classes</h2></li>
+      <li><h2>Pseudo-elements</h2></li>
+    </ul>
+    <style>
+      * {
+        border: 2px solid red;
+        margin: 2px;
+      }
+      .desc {
+        text-decoration: underline;
+      }
+      #hght {
+        color: green;
+      }
+      h1,
+      h2,
+      h3 {
+        color: yellow;
+      }
+      #special p {
+        background-color: aqua;
+      }
+      #heading ~ p {
+        background-color: blue;
+      }
+    </style>
+  </body>
+</html>
